@@ -1,0 +1,260 @@
+/* reset bootstrap styles*/
+
+.form-control.is-invalid, .was-validated .form-control:invalid,
+.form-select.is-invalid, .was-validated .form-select:invalid {
+  background-image: none;
+  border-color: unset
+}
+.form-control.is-invalid, .was-validated .form-control:invalid:hover,
+.form-select.is-invalid, .was-validated .form-select:invalid:hover {
+  border-color: #6CEEC7;
+}
+
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+  color: #E0E0E0
+}
+
+.form-control.is-valid, .was-validated .form-control:valid,
+.form-select.is-valid, .was-validated .form-select:valid {
+  border-color: #6CEEC7;
+}
+
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+  color: #67D9B7;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+  background-image: none;
+}
+
+.form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"] {
+  --bs-form-select-bg-icon: unset;
+}
+
+/*  */
+
+.registration-form__inputs-row {
+  margin-bottom: 0 !important;
+}
+
+.registration-form__inputs-col {
+  margin-bottom: 1rem !important;
+}
+
+.registration-form__input {
+  outline: none;
+  transition: .3s;
+  font-weight: 300;
+  font-size: 19px;
+  color: #E0E0E0;
+  border: 1px solid #fff ;
+  border-color: #fff;
+  background-color: transparent;
+  padding-left: 42px !important;
+}
+.registration-form__input:focus {
+  background-color: rgba(0, 0, 0, .40);
+  color: #E0E0E0;
+}
+.registration-form__input::placeholder:focus {
+  background: transparent;
+  background-color: transparent !important;
+
+}
+.registration-form__input-label {
+  color: #E0E0E0;
+  background-color: transparent !important;
+}
+
+.registration-form__input-label:focus {
+  background-color: transparent !important;
+  color: #67D9B7 !important;
+}
+
+.registration-form__input-label > label {
+  color: #E0E0E0;
+  font-weight: 300;
+  left: 30px;
+}
+
+.registration-form__input-label > label::after {
+  color: #67D9B7 !important;
+  font-size: 11px;
+  background-color: transparent !important;
+}
+
+.registration-form__input:focus:valid {
+  outline: none;
+  border: 1px solid #6CEEC7;
+  border-color: #6CEEC7 !important;
+}
+
+.registration-form__input:valid {
+  border-color: #6CEEC7;
+}
+
+.registration-form__input:invalid {
+  border: 1px solid #fff;
+  border-color: #fff;
+}
+
+.registration-form__input:required {
+  border: 1px solid #fff;
+  border-color: #fff;
+}
+
+.registration-form__input:hover {
+  border:1px solid #6CEEC7;
+  cursor: pointer;
+}
+
+.registration-form__input--user-name::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/User.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+}
+
+.registration-form__input--surname::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/Users.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 22px;
+  left: 14px;
+}
+
+.registration-form__input--location::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/Location.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+}
+
+.registration-form__input--phone::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/Phone.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+}
+
+.registration-form__input--password::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/Lock.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+}
+
+.registration-form__input--confirm-password::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/Locks.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 14px;
+}
+
+.registration-form__input--email::before {
+  display: block;
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-image: url('../../img/icons/Email.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 22px;
+  left: 14px;
+}
+
+.registration-form__checkbox:checked, .registration-form__checkbox:valid:checked {
+  background-color: #6CEEC7;
+  border: 1px solid #6CEEC7;
+  outline: none;
+}
+
+.registration-form__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid#67D9B7;
+  background-color: transparent;
+}
+
+.registration-form__checkbox:hover {
+  cursor: pointer;
+}
+
+.registration-form__checkbox:checked, .registration-form__checkbox:valid{
+  background-color: #67D9B7 !important;
+}
+
+.registration-form__checkbox-label {
+  color: #E0E0E0;
+}
+
+.registration-form__checkbox-label--link {
+  color: #6CEEC7;
+  transition: .3s;
+}
+.registration-form__checkbox-label--link:hover {
+  color: #51b798;
+}
+
+.registration-form__sumbit-btn {
+  color: #000;
+  background-color: #6CEEC7;
+  border: 1px solid #6CEEC7;
+  border-radius: 7px;
+  padding: 15px 40px;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.registration-form__sumbit-btn:hover {
+  border: 1px solid #6CEEC7;
+  background-color: unset;
+  color: #6CEEC7;
+}
+
+.registration-form__sumbit-btn:active {
+  border: 1px solid #6CEEC7 !important;
+  background-color: unset !important;
+  color: #6CEEC7 !important;
+}
+
+
+
